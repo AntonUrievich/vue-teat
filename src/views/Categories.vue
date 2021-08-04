@@ -1,8 +1,8 @@
 <template>
   <div>
-      <div class="page-title">
-        <h3>Категории</h3>
-      </div>
+    <div class="page-title">
+      <h3>Категории</h3>
+    </div>
     <section>
       <div class="row">
         <div class="col s12 m6">
