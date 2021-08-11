@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/Categories.vue')
   },
   {
-    path: '/detail/:id',
+    path: '/detail',
     name: 'detail',
     meta: {layout: 'main'},
     component: () => import('../views/Detail.vue')

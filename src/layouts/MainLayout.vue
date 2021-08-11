@@ -2,7 +2,7 @@
   <div class="app-main-layout">
 
     <Navbar />
-
+    
     <Sidebar />
 
     <main class="app-content">
@@ -20,12 +20,14 @@
 </template>
 
 <script>
-import Navbar from '../components/app/Navbar.vue'
-import Sidebar from '../components/app/Sidebar.vue'
+import Navbar from '../components/app/Navbar'
+import Sidebar from '../components/app/Sidebar'
 
 export default {
   name: 'main-layout',
-  components: Navbar + Sidebar
+  components: { Navbar,
+  Sidebar
+  }
 }
 </script>
 
