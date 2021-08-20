@@ -1,5 +1,5 @@
 <template>
-  <ul class="sidenav app-sidenav" :class="{open: 'value'}">
+  <ul class="sidenav app-sidenav" :class="{open: isOpen}">
       <router-link
         :to="link.url"
         :exact="link.exact"

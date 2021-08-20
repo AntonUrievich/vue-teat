@@ -1,9 +1,9 @@
 <template>
   <div class="app-main-layout">
 
-    <Navbar @click="isOpen = !isOpen"/>
+    <Navbar @click="isOpen = !isOpen" />
     
-    <Sidebar :isOpen="isOpen"/>
+    <Sidebar :isOpen="isOpen" />
 
     <main class="app-content" :class="{full: !isOpen}">
       <div class="app-page">
@@ -25,9 +25,9 @@ import Sidebar from '../components/app/Sidebar'
 
 export default {
   name: 'main-layout',
-    data: () => ({
-      isOpen: true,
-    }),
+  data: () => ({
+    isOpen: true,
+  }),
   components: { Navbar, Sidebar
   }
 }
