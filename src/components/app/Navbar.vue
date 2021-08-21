@@ -55,8 +55,8 @@ export default {
   },
   mounted() {
     this.interval = setInterval(() => {
-      this.date = new Date ()
-    }, 1000)
+      this.date = new Date ().toLocaleTimeString() + " " + new Date().toLocaleDateString() 
+    }, 10)
     this.dropdown = window.M.Dropdown.init(this.$refs.dropdown, {
       constrainWidth: true
     })
