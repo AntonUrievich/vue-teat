@@ -48,8 +48,28 @@
 
       <p class="center">
         Уже есть аккаунт?
-        <a href="/">Войти!</a>
+        <router-link to="/login">Войти!</router-link>
       </p>
     </div>
   </form>
 </template>
+
+<script>
+import {email, required, minLength} from '@vuelidate/validators'
+
+export default {
+  name: 'register',
+  data: () => ({
+    email: '',
+    password:'',
+    name: '',
+    agree: false
+  }),
+  validations: {
+    email: {email, required},
+    password: {required, minLength: minLength(6)},
+    name: {required},
+    agree: {cheked: v => v}
+  },
+}
+</script>
